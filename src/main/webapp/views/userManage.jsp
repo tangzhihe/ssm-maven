@@ -112,18 +112,14 @@
 </table>
 <div id="tb">
     <div>
-        <a href="javascript:openUserAddDialog()" class="easyui-linkbutton"
-           iconCls="icon-add" plain="true">添加</a> <a
-            href="javascript:openUserModifyDialog()" class="easyui-linkbutton"
-            iconCls="icon-edit" plain="true">修改</a> <a
-            href="javascript:deleteUser()" class="easyui-linkbutton"
-            iconCls="icon-remove" plain="true">删除</a>
+        <a href="javascript:openUserAddDialog()" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a> 
+        <a href="javascript:openUserModifyDialog()" class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a> 
+        <a href="javascript:deleteUser()" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
     </div>
     <div>
-        &nbsp;用户名：&nbsp;<input type="text" id="s_userName" size="20"
-                               onkeydown="if(event.keyCode==13) searchUser()"/> <a
-            href="javascript:searchUser()" class="easyui-linkbutton"
-            iconCls="icon-search" plain="true">搜索</a>
+        &nbsp;用户名：&nbsp;
+        <input type="text" id="s_userName" size="20" onkeydown="if(event.keyCode==13) searchUser()"/> 
+        <a href="javascript:searchUser()" class="easyui-linkbutton" iconCls="icon-search" plain="true">搜索</a>
     </div>
 </div>
 
@@ -134,16 +130,16 @@
         <table cellspacing="8px">
             <tr>
                 <td>用户名：</td>
-                <td><input type="text" id="userName" name="userName"
-                           class="easyui-validatebox" required="true"/>&nbsp;<font
-                        color="red">*</font>
+                <td>
+                	<input type="text" id="userName" name="userName" class="easyui-validatebox" required="true"/>
+                	&nbsp;<font color="red">*</font>
                 </td>
             </tr>
             <tr>
                 <td>密码：</td>
-                <td><input type="text" id="password" name="password"
-                           class="easyui-validatebox" required="true"/>&nbsp;<font
-                        color="red">*</font>
+                <td>
+                	<input type="text" id="password" name="password" class="easyui-validatebox" required="true"/>
+                	&nbsp;<font color="red">*</font>
                 </td>
             </tr>
         </table>
@@ -151,9 +147,8 @@
 </div>
 
 <div id="dlg-buttons">
-    <a href="javascript:saveUser()" class="easyui-linkbutton"
-       iconCls="icon-ok">保存</a> <a href="javascript:closeUserDialog()"
-                                   class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
+    <a href="javascript:saveUser()" class="easyui-linkbutton" iconCls="icon-ok">保存</a> 
+    <a href="javascript:closeUserDialog()" class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
 </div>
 </body>
 </html>

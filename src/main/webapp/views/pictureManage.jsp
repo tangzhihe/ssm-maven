@@ -23,12 +23,11 @@
             src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.uploadify.v2.0.3.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/swfobject.js"></script>
-        <%
+    <%
 	String type = request.getParameter("type");
 	String grade = request.getParameter("grade");
-%>
-    <script type="text/javascript"
-            src="${pageContext.request.contextPath}/js/common.js"></script>
+    %>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/common.js"></script>
 <body style="margin:1px;" id="ff">
 <table id="dg" title="图片信息管理" class="easyui-datagrid" pagination="true"
        rownumbers="true" fit="true" data-options="pageSize:10"
@@ -46,18 +45,15 @@
 </table>
 <div id="tb">
     <div>
-        <a href="javascript:openPictureAddDialog()" class="easyui-linkbutton"
-           iconCls="icon-add" plain="true">添加</a> <a
-            href="javascript:openPictureModifyDialog()"
-            class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a> <a
-            href="javascript:deletePicture()" class="easyui-linkbutton"
-            iconCls="icon-remove" plain="true">删除</a>
+        <a href="javascript:openPictureAddDialog()" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a> 
+        <a href="javascript:openPictureModifyDialog()" class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a> 
+        <a href="javascript:deletePicture()" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
     </div>
     <div>
-        &nbsp;标题：&nbsp;<input type="text" id="url" size="20"
-                              onkeydown="if(event.keyCode==13) searchPicture()"/>&nbsp; <a
-            href="javascript:searchPicture()" class="easyui-linkbutton"
-            iconCls="icon-search" plain="true">搜索</a>
+        &nbsp;标题：&nbsp;
+        <input type="text" id="url" size="20" onkeydown="if(event.keyCode==13) searchPicture()"/>
+        &nbsp; 
+        <a href="javascript:searchPicture()" class="easyui-linkbutton" iconCls="icon-search" plain="true">搜索</a>
     </div>
 </div>
 <div id="dlg" class="easyui-dialog"
@@ -83,9 +79,8 @@
 </div>
 
 <div id="dlg-buttons">
-    <a href="javascript:savePicture()" class="easyui-linkbutton"
-       iconCls="icon-ok">保存</a> <a href="javascript:closePictureDialog()"
-                                   class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
+    <a href="javascript:savePicture()" class="easyui-linkbutton" iconCls="icon-ok">保存</a> 
+    <a href="javascript:closePictureDialog()" class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
 </div>
 
 

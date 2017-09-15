@@ -38,26 +38,21 @@
         <th field="articleTitle" width="200" align="center">标题</th>
         <th field="articleCreateDate" width="150" align="center">创建时间</th>
         <th field="addName" width="150" align="center">添加人</th>
-        <th field="content" width="70" align="center"
-            formatter="formatHref">操作
-        </th>
+        <th field="content" width="70" align="center" formatter="formatHref">操作</th>
     </tr>
     </thead>
 </table>
 <div id="tb">
     <div>
-        <a href="javascript:openArticleAddDialog()" class="easyui-linkbutton"
-           iconCls="icon-add" plain="true">添加</a> <a
-            href="javascript:openArticleModifyDialog()"
-            class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a> <a
-            href="javascript:deleteArticle()" class="easyui-linkbutton"
-            iconCls="icon-remove" plain="true">删除</a>
+        <a href="javascript:openArticleAddDialog()" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a> 
+        <a href="javascript:openArticleModifyDialog()" class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a> 
+        <a href="javascript:deleteArticle()" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
     </div>
     <div>
-        &nbsp;标题：&nbsp;<input type="text" id="articleTitle" size="20"
-                              onkeydown="if(event.keyCode==13) searchArticle()"/>&nbsp; <a
-            href="javascript:searchArticle()" class="easyui-linkbutton"
-            iconCls="icon-search" plain="true">搜索</a>
+        &nbsp;标题：&nbsp;
+        <input type="text" id="articleTitle" size="20" onkeydown="if(event.keyCode==13) searchArticle()"/>
+        &nbsp; 
+        <a href="javascript:searchArticle()" class="easyui-linkbutton" iconCls="icon-search" plain="true">搜索</a>
     </div>
 </div>
 
@@ -68,16 +63,16 @@
         <table cellspacing="8px">
             <tr>
                 <td>标题：</td>
-                <td><input type="text" id="title" name="articleTitle"
-                           class="easyui-validatebox" required="true"/>&nbsp;<font
-                        color="red">*</font>
+                <td>
+                	<input type="text" id="title" name="articleTitle" lass="easyui-validatebox" required="true"/>
+                	&nbsp;<font color="red">*</font>
                 </td>
             </tr>
             <tr>
                 <td>添加人：</td>
-                <td><input type="text" id="addName" name="addName"/>
-                    <input type="text" id="articleCreateDate" name="articleCreateDate" type="hidden"
-                           style="display:none;"/>
+                <td>
+                	<input type="text" id="addName" name="addName"/>
+                    <input type="text" id="articleCreateDate" name="articleCreateDate" type="hidden" style="display:none;"/>
                 </td>
             </tr>
             <tr>
@@ -90,9 +85,8 @@
 </div>
 
 <div id="dlg-buttons">
-    <a href="javascript:saveArticle()" class="easyui-linkbutton"
-       iconCls="icon-ok">保存</a> <a href="javascript:closeArticleDialog()"
-                                   class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
+    <a href="javascript:saveArticle()" class="easyui-linkbutton" iconCls="icon-ok">保存</a> 
+    <a href="javascript:closeArticleDialog()" class="easyui-linkbutton" iconCls="icon-cancel">关闭</a>
 </div>
 
 
