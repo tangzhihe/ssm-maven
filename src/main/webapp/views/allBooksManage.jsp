@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -54,23 +53,21 @@
         <th field="publisher" width="120" align="center">出版社</th>
         <th field="binding" width="10" align="center" hidden="true">装订方式</th>
         <th field="hot" width="10" align="center" hidden="true">热度值</th>
-        <th field="status" width="55" align="center"
-            formatter="formatStatus">上架状态
-        </th>
+        <th field="status" width="55" align="center" formatter="formatStatus">上架状态</th>
         <th field="supply" width="50" align="center">库存</th>
     </tr>
     </thead>
 </table>
 <div id="tb">
     <div>
-        &nbsp;标题：&nbsp;<input type="text" id="biaoti" size="20"
-                              onkeydown="if(event.keyCode==13) searchBook()"/>&nbsp;&nbsp;作者：&nbsp;<input
-            type="text" id="zuozhe" size="20"
-            onkeydown="if(event.keyCode==13) searchBook()"/>&nbsp;
-        &nbsp;ISBN码：&nbsp;<input type="text" id="bianma" size="20"
-                                 onkeydown="if(event.keyCode==13) searchBook()"/>&nbsp; <a
-            href="javascript:searchBook()" class="easyui-linkbutton"
-            iconCls="icon-search" plain="true">搜索</a>
+        &nbsp;标题：&nbsp;
+        <input type="text" id="biaoti" size="20" onkeydown="if(event.keyCode==13) searchBook()"/>
+        &nbsp;&nbsp;作者：&nbsp;
+        <input type="text" id="zuozhe" size="20" onkeydown="if(event.keyCode==13) searchBook()"/>
+        &nbsp;&nbsp;ISBN码：&nbsp;
+        <input type="text" id="bianma" size="20" onkeydown="if(event.keyCode==13) searchBook()"/>
+        &nbsp; 
+        <a href="javascript:searchBook()" class="easyui-linkbutton" iconCls="icon-search" plain="true">搜索</a>
     </div>
 </div>
 
