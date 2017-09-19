@@ -72,38 +72,39 @@
             $("#adminlogin").submit();
 
         }
-    </script>
+	    if ('${errorMsg}' != '') {
+	        alert('${errorMsg}');
+	    }
+	</script>
 </head>
 <body>
-<form id=adminlogin method=post
-      name=adminlogin action="${pageContext.request.contextPath}/user/login.do">
+<form id=adminlogin method=post name=adminlogin action="${pageContext.request.contextPath}/user/login.do">
     <div></div>
-    <table style="margin: auto; width: 100%; height: 100%" border=0
-           cellSpacing=0 cellPadding=0>
+    <table style="margin: auto; width: 100%; height: 100%" border=0 cellSpacing=0 cellPadding=0>
         <tbody>
         <tr>
             <td height=150>&nbsp;</td>
         </tr>
         <tr style="height: 254px">
             <td>
-                <div style="margin: 0px auto; width: 936px"><img
-                        style="display: block" src="${pageContext.request.contextPath}/images/body_03.jpg"></div>
+                <div style="margin: 0px auto; width: 936px">
+                	<img style="display: block" src="${pageContext.request.contextPath}/images/body_03.jpg"/>
+                </div>
                 <div style="background-color: #278296">
                     <div style="margin: 0px auto; width: 936px">
-                        <div
-                                style="BACKGROUND: url(${pageContext.request.contextPath}/images/body_05.jpg) no-repeat; height: 155px">
-                            <div
-                                    style="text-align: left; width: 265px; float: right; height: 125px; _height: 95px">
+                        <div style="BACKGROUND: url(${pageContext.request.contextPath}/images/body_05.jpg) no-repeat; height: 155px">
+                            <div style="text-align: left; width: 265px; float: right; height: 125px; _height: 95px">
                                 <table border=0 cellSpacing=0 cellPadding=0 width="100%">
                                     <tbody>
                                     <tr>
-                                        <td style="height: 45px"><input type="text" class=input
-                                                                        value="${user.userName }" name="userName"
-                                                                        id="userName"></td>
+                                        <td style="height: 45px">
+                                        	<input type="text" class=input value="${user.userName }" name="userName" id="userName">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="password" class=input value="${user.password }" name="password"
-                                                   id="password"/></td>
+                                        <td>
+                                        	<input type="password" class=input value="${user.password }" name="password" id="password"/>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -114,16 +115,17 @@
                                     <tbody>
 
                                     <tr>
-                                        <td width=100 align=right><input
-                                                style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px"
-                                                id=btnLogin src="${pageContext.request.contextPath}/images/btn1.jpg"
-                                                type=image name=btnLogin onclick="javascript:login();return false;">
+                                        <td width="100" align="right">
+                                        	<input style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px"
+                                                   id=btnLogin src="${pageContext.request.contextPath}/images/btn1.jpg"
+                                                   type=image name=btnLogin onclick="javascript:login();return false;"/>
                                         </td>
-                                        <td width=100 align=middle><input
-                                                style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px"
-                                                id=btnReset src="${pageContext.request.contextPath}/images/btn2.jpg"
-                                                type=image name=btnReset
-                                                onclick="javascript:adminlogin.reset();return false;"></td>
+                                        <td width="100" align="middle">
+                                        	<input style="border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px"
+                                                   id=btnReset src="${pageContext.request.contextPath}/images/btn2.jpg"
+                                                   type=image name=btnReset
+                                                   onclick="javascript:adminlogin.reset();return false;"/>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -131,8 +133,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="margin: 0px auto; width: 936px"><img
-                        src="${pageContext.request.contextPath}/images/body_06.jpg"></div>
+                <div style="margin: 0px auto; width: 936px">
+                	<img src="${pageContext.request.contextPath}/images/body_06.jpg"/>
+                </div>
             </td>
         </tr>
         <tr style="height: 30%">
@@ -143,8 +146,3 @@
 </form>
 </body>
 </html>
-<script type=text/javascript>
-    if ('${errorMsg}' != '') {
-        alert('${errorMsg}');
-    }
-</script>

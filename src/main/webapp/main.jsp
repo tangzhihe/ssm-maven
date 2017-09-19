@@ -55,10 +55,11 @@
     <table width="100%">
         <tr>
             <td width="50%"></td>
-            <td valign="bottom"
-                style="font-size: 20px;color:#8B8B8B;font-family: '楷体';"
-                align="right" width="50%"><font size="3">&nbsp;&nbsp;<strong>当前管理员：</strong>${currentUser.userName
-                    }</font>【管理员】
+            <td valign="bottom" style="font-size: 20px;color:#8B8B8B;font-family: '楷体';" align="right" width="50%">
+            	<font size="3">&nbsp;&nbsp;
+            		<strong>当前管理员：</strong>
+            		${currentUser.userName}
+            	</font>【管理员】
             </td>
         </tr>
     </table>
